@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        
     </head>
     <body>
         <h1> Foobar Bookshop </h1>
@@ -19,18 +19,23 @@
             Password: <input type ="password" name ="password"><br>
             <input type ="submit" name="login" value ="Login"/> 
         <h2> Register now </h2>
-        <form name ="registration" method ="post" action="">
+        <form name ="registration" method ="post" action="registration.jsp">
             Username: <input type ="text" name ="username"><br>
             Password: <input type ="password" name ="password"><br>
             First Name: <input type ="text" name ="fName"><br>
             Middle Initial: <input type ="text" name="MI"><br>
             Last Name: <input type ="text" name ="lName"><br>
             Email Address: <input type="text" name="eAdd"><br>
+            Telephone Number: <input type="text" name="telNo"><br>
             Billing/Deliver Address: <input type ="text" name="Address"><br>
             Credit Card Number: <input type ="text" name="CCnumber"><br>
             Credit Card Name: <input type="text" name="CCname"><br>
-            Credit Card Type: <input type ="text" name="CCtype"><br>
-            Event Month:<select name="CCexpireMon" style="color: #FFFFFF; font-family: Verdana; font-weight: bold; background-color: #72A4D2;">
+            Credit Card Type: <select name="CCtype"><br>
+                <option>Type</option>
+                <option value="Visa">Visa</option>
+                <option value="Master Card">Master Card</option>
+            </select>
+            Credit Card Expire Month:<select name="CCexpireMon" >
            <option>Month</option>
                     <option value='01'>January</option>
                     <option value='02'>February</option>
@@ -45,7 +50,7 @@
                     <option value='11'>November</option>
                     <option value='12'>December</option>
                 </select>
-            Event Day: <select name="CCexpireDay" style="color: #FFFFFF; font-family: Verdana; font-weight: bold; background-color: #72A4D2;">
+            Credit Card Expire Day: <select name="CCexpireDay">
                     <option>Day</option>
                     <option value='01'>01</option>
                     <option value='02'>02</option>
@@ -80,7 +85,7 @@
                     <option value='31'>31</option>
                 </select>
       
-           Year <select name="CCexpireYr" style="color: #FFFFFF; font-family: Verdana; font-weight: bold; background-color: #72A4D2;">
+           Credit Card Expire Year <select name="CCexpireYr">
                     <option>Year</option>
                     <option value='2011'>2011</option>
                     <option value='2012'>2012</option>
