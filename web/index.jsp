@@ -1,29 +1,38 @@
 <%-- 
     Document   : index
-    Created on : 01 19, 12, 6:47:15 PM
-    Author     : RES
+    Created on : 10 13, 10, 3:03:36 PM
+    Author     : CCS
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="DBConnection.ConnectionFactory"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+       
+
     </head>
     <body>
+     
         <h1> Foobar Bookshop </h1>
         <h2> Login</h2>
         <form name ="login" method="post" action="">
             Username: <input type ="text" name="username">
             Password: <input type ="password" name ="password"><br>
             <input type ="submit" name="login" value ="Login"/> 
+        </form>
         <h2> Register now </h2>
-        <form name ="registration" method ="post" action="registration.jsp">
+        <form name ="form1"method ="post" action="registrationAction.jsp">
             Username: <input type ="text" name ="username"><br>
             Password: <input type ="password" name ="password"><br>
             First Name: <input type ="text" name ="fName"><br>
-            Middle Initial: <input type ="text" name="MI"><br>
+            Middle Name: <input type ="text" name="mName"><br>
             Last Name: <input type ="text" name ="lName"><br>
             Email Address: <input type="text" name="eAdd"><br>
             Telephone Number: <input type="text" name="telNo"><br>
@@ -110,6 +119,7 @@
                     
                 </select><br>
             <input type="submit" name="submit" value ="Register"/>
+           
         </form>
                 
             
