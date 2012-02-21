@@ -17,7 +17,7 @@ public abstract class ConnectionFactory {
 
     public static ConnectionFactory getFactory()
     {
-        ResourceBundle settings = ResourceBundle.getBundle("secprogmp");
+        ResourceBundle settings = ResourceBundle.getBundle("WEBPROG");
         driver = settings.getString("driver");
         url = settings.getString("url");
         username = settings.getString("username");
