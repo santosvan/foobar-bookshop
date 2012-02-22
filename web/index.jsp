@@ -45,9 +45,6 @@
             Username: <input type ="text" name="username">
             Password: <input type ="password" name ="password"><br>
             <input type ="submit" name="login" value ="Login"/>
-            <%  
-            if(request.getAttribute("") == ""){};
-            %>
             <a href ="forgotpassword.jsp" > Forgot Password? </a>
         </form>
         
