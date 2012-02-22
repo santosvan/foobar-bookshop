@@ -58,11 +58,11 @@
             result = new UserManager().addUser(newUser);
 
            
-                //response.sendRedirect("index.jsp");
+                response.sendRedirect("index.jsp");
           
 
 
         %>
-        heelo
+        
     </body>
 </html>
