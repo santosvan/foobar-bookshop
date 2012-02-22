@@ -41,10 +41,14 @@
 
         <div id="maincontainer">
         <h2> Login</h2>
-        <form name ="login" method="post" action="">
+        <form name ="login" method="post" action="loginAction.jsp">
             Username: <input type ="text" name="username">
             Password: <input type ="password" name ="password"><br>
-            <input type ="submit" name="login" value ="Login"/> 
+            <input type ="submit" name="login" value ="Login"/>
+            <%  
+            if(request.getAttribute("") == ""){};
+            %>
+            <a href ="forgotpassword.jsp" > Forgot Password? </a>
         </form>
         
        
