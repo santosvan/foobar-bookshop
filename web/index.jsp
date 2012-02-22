@@ -15,18 +15,39 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-       
-
+        <link rel = "stylesheet" href= "main.css" type="text/css"/>
+        <link rel = "stylesheet" href= "menu.css" type="text/css"/>
     </head>
     <body>
      
-        <h1> Foobar Bookshop </h1>
+        <div id="header">
+        <h1>
+            FOOBAR.
+        </h1>
+        <h2>
+            more than just books.
+        </h2>
+        </div>
+        
+        <div id="tabs24"><ul>
+        <li><a href="index.php" >About Us</a></li>
+        <li><a href="index.php" >Home</a></li>
+        <li><a href="index.php" >Books</a></li>
+        <li><a href="index.php" >Magazines</a></li>
+        <li><a href="index.php" >Audio CDs</a></li>
+        <li><a href="index.php" >DVDs</a></li>
+            </ul>
+        </div>
+
+        <div id="maincontainer">
         <h2> Login</h2>
         <form name ="login" method="post" action="">
             Username: <input type ="text" name="username">
             Password: <input type ="password" name ="password"><br>
             <input type ="submit" name="login" value ="Login"/> 
         </form>
+        
+       
         <h2> Register now </h2>
         <form name ="form1"method ="post" action="registrationAction.jsp">
             Username: <input type ="text" name ="username"><br>
@@ -119,8 +140,9 @@
                     
                 </select><br>
             <input type="submit" name="submit" value ="Register"/>
-           
         </form>
+        </div>
+        
                 
             
     </body>
