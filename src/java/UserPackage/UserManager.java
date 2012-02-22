@@ -55,7 +55,7 @@ public class UserManager {
 
             int i=1;
     
-            PreparedStatement pstmt = conn.prepareStatement("SELECT username FROM user WHERE username = ?");
+            PreparedStatement pstmt = conn.prepareStatement("SELECT userUsername FROM user WHERE userUsername = ?");
 
             pstmt.setString(i++, username);
 
