@@ -1,0 +1,198 @@
+/* 
+    Document   : try
+    Created on : Feb 22, 2012, 4:08:32 PM
+    Author     : inahbanana
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#regheader{
+    color: #93C;
+    font-family: "NKOTB FEVER";
+    font-size: xx-large;
+    text-align: center;
+    position: inherit;
+    margin-top: -2%;
+
+
+}
+body {
+        color: #93C;
+	background-image: url(bgg.jpg);
+	background-color: #71a1e3;
+        background-repeat: repeat-x;
+	font-weight: bold;
+	font-family: "GardensC";
+	text-align: justify;
+        font-size: large;
+        background-attachment: fixed;
+}
+
+#container-reg{
+    background-image: url(contain.jpg);
+    background-position:bottom right;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-color: #FFBBFF;
+    width: 50%;
+    padding: 30px;
+    height: inherit;
+    margin-left: 24%;
+    border: 10px purple dotted;
+    position: absolute;
+    -moz-border-radius: 8px;
+    -moz-box-shadow: rgba(0,0,0,4) 0px 0px 30px;
+    -box-shadow: rgba(0, 0, 0, 4) 0px, 0px, 30px;
+    opacity: 3;
+}
+
+#menubar{
+    width: 250px;
+    height: auto;
+    background-image: url("sidepic.jpg");
+    margin-left: -10%;
+    margin-bottom:2%;
+    padding-left: 11%;
+    padding-top: 15px;
+    border: 5px;
+    border-style: dashed;
+    position: absolute;
+    border-color: purple;
+    min-height: 300px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #9966cc;
+
+}
+#copyright{
+    position: inherit;
+
+}
+#leftcontainer{
+    background-image: url("contbgleft.jpg");
+    background-position: 37%;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-color: #FFBBFF;
+    width: 30%;
+    padding: 30px;
+    height: inherit;
+    margin-left: 20%;
+    border: 10px purple dotted;
+    position: relative;
+    font-family: "Juice ITC";
+    font-size:25px;
+    -moz-border-radius: 8px;
+    -moz-box-shadow: rgba(0,0,0,4) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 4) 0px 0px 30px;
+    opacity: 3;
+    
+    
+}
+
+#rightcontainer{
+    background-image: url("contbgright.jpg");
+    min-height: 300px;
+    background-repeat: no-repeat;
+    margin-top: -25.25%;
+    background-color: #FFBBFF;
+    width: 30%;
+    padding: 30px;
+    height: inherit;
+    margin-left: 60%;
+    border: 10px purple dotted;
+    position: relative;
+    font-family: arial;
+    font-size:25px;
+    -moz-border-radius: 8px;
+    -moz-box-shadow: rgba(0,0,0,4) 0px 0px 30px;
+    -box-shadow: rgba(0, 0, 0, 4) 0px, 0px, 30px;
+    opacity: 3;
+}
+
+#container2{
+    background-image: url(contain2.jpg);
+    background-position:bottom right;
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-color: #FFBBFF;
+    width: 50%;
+    padding: 30px;
+    height: inherit;
+    margin: auto;
+    border: 10px purple dotted;
+    position: relative;
+    -moz-border-radius: 8px;
+    -moz-box-shadow: rgba(0,0,0,4) 0px 0px 30px;
+    -box-shadow: rgba(0, 0, 0, 4) 0px, 0px, 30px;
+    opacity: 3;
+}
+
+.submitButton{
+    cursor:pointer;
+    border:solid 2px #ccc;
+    font-weight:bold;
+    padding: 1px 2px;
+    background-color: #00CDCD;
+    font-family: arial;
+    font-size: x-large;
+    color: #FFFF00;
+}
+
+.btnstyle{
+          color:#7774e4;
+	  font: bold 60% 'GardensC',helvetica,sans-serif;
+	  background-color:#fed;
+          font-size: 18px;
+	  border: 3px solid;
+	  border-color: #357cb4 #004479 #004479 #357cb4;
+	  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffeeddaa');
+	}
+
+.btnhov{
+   border-color: #c63 #930 #930 #c63;
+
+}
+
+
+.menupanels{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+
+}
+
+.menupanels li{
+
+    border-bottom: 2px solid white;
+}
+
+.menupanels li a{
+    /*background: #333 url(media/sexypanelright.gif) no-repeat right top; /*color of menu by default*/
+    font: bold 14px;
+    font-family: arial;
+    display: block;
+    color: black;
+    width: auto;
+    padding: 5px 0; /* Vertical (top/bottom) padding for each menu link */
+    text-indent: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid #6FF; /*bottom border of menu link. Should be equal or darker to link's bgcolor*/
+    margin-left: -10%;
+}
+
+.menupanels li a:visited, .menupanels li a:active{
+    color: white;
+}
+
+.menupanels li a:hover{
+    background-color: #FCF; /*color of menu onMouseover*/
+    color: white;
+    border-bottom: 1px solid black; /*bottom border of menu link during hover. Should be equal or darker to link's hover's bgcolor*/
+}
+

@@ -1,0 +1,52 @@
+/* 
+    Document   : main
+    Created on : Feb 22, 2012, 4:18:14 PM
+    Author     : inahbanana
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+    
+    background-color: #ADEAEA;
+    
+}
+
+#maincontainer{
+        
+        padding-top: 10px;
+        position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:900px;
+	background:#FEE680;
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
+}
+
+#header{
+    
+    position:relative;
+    margin: 0 auto;
+    width: 900px;
+    /*padding:1em;*/
+    background:#1d1c1b;
+    border-bottom:6px double #1d1c1b;
+   
+}
+
+#footer{
+    
+        position:absolute;
+	width:100%;
+	bottom:0; /* stick to bottom */
+	background:#1d1c1b;
+	border-top:6px double #1d1c1b;
+}
+
+
