@@ -21,7 +21,7 @@
             author = request.getParameter("bookAuthor");
             year = request.getParameter("bookYear");
             price = request.getParameter("bookPrice");
-            synopsis = request.getParameter("bookSyh");
+            synopsis = request.getParameter("bookSyn");
 
             Book newBook = new Book();
 

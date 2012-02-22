@@ -24,19 +24,21 @@ public class BookManager {
 
             int i=1;
     
-            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO books WHERE username = ? AND password = ?");
+            PreparedStatement addbook = conn.prepareStatement("INSERT INTO books (bookTitle, bookAuthor, bookYear, bookSynopsis, bookPrice,) VALUES (?,?,?,?,?)"); ;
 
-            pstmt.setString(i++, newBook.getTitle());
-            pstmt.setString(i++, newBook.getAuthor());
+            addbook.setString(i++, newBook.getTitle());
+            addbook.setString(i++, newBook.getAuthor());
+            addbook.setString(i++, newBook.getYear());
+            addbook.setString(i++, newBook.getSynopsis());
+            addbook.setString(i++, newBook.getPrice());
 
-            ResultSet rs = pstmt.executeQuery();
-
-            while(rs.next())
-            {
-                result=true;
-            }
+            addbook.executeUpdate();
+            result = true; 
+            
             conn.close();
         }
+        
+        
         catch(SQLException ex)
         { ex.printStackTrace();}
 
