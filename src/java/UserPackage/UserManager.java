@@ -46,6 +46,34 @@ public class UserManager {
 
     }
 
+    public boolean checkUser2(String username)
+    {
+        boolean result=false;
+        try{
+            ConnectionFactory myFactory = ConnectionFactory.getFactory();
+            Connection conn = myFactory.getConnection();
+
+            int i=1;
+    
+            PreparedStatement pstmt = conn.prepareStatement("SELECT username FROM user WHERE username = ?");
+
+            pstmt.setString(i++, username);
+
+            ResultSet rs = pstmt.executeQuery();
+
+            while(rs.next())
+            {
+                result=true;
+            }
+            conn.close();
+        }
+        catch(SQLException ex)
+        { ex.printStackTrace();}
+
+        return result;
+
+    }
+    
     public boolean checkAdmin(String username, String password)
     {
         boolean result=false;
