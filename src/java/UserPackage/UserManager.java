@@ -94,11 +94,11 @@ public class UserManager {
             
 
 
-            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO customer(customerUsername,customerPassword,customerFirstName,customerMiddleName, customerLastName, customerAddress,customerEmail,customerTelNo,customerLoginStatus, creditCardNumber, creditCardName, creditCardType, creditCardExp) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO customer(customerUsername,customerPassword,customerFirstName,customerMiddleName, customerLastName, customerAddress,customerEmail,customerTelNo,customerLoginStatus) VALUES(?,?,?,?,?,?,?,?,?)");
 
             //include parameters
             int i=1, j =1, k = 1;
-
+           
             
             
             pstmt.setString(i++, newUser.getUsername());
@@ -110,12 +110,20 @@ public class UserManager {
             pstmt.setString(i++, newUser.getEmail());
             pstmt.setString(i++, newUser.getphoneNo());
             pstmt.setString(i++, "No");
-            pstmt.setString(i++, newUser.getccnum());
-            pstmt.setString(i++, newUser.getccname());
-            pstmt.setString(i++, newUser.getcctype());
-            pstmt.setDate(i++, ccexpdate);
-            //Execute sql statement
             pstmt.executeUpdate();
+            
+            PreparedStatement pstmt1 = conn.prepareStatement("SELECT customerID from customer where username = ?");
+            pstmt1.setString(j++, newUser.getUsername());
+            ResultSet rs= pstmt1.executeQuery();
+            int a = rs.getInt(1);
+            PreparedStatement pstmt2 = conn.prepareStatement("INSERT into creditcard (creditCardNum, creditCardName, creditCardType, creditCardExp, customer_customerID) VALUES(?,?,?,?,?) ");
+            pstmt2.setString(k++, newUser.getccnum());
+            pstmt2.setString(k++, newUser.getccname());
+            pstmt2.setString(k++, newUser.getcctype());
+            pstmt2.setDate(k++, ccexpdate);
+            pstmt2.setInt(k++, a);
+            //Execute sql statement
+            pstmt2.executeUpdate();
             
             
           /* 
