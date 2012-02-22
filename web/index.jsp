@@ -41,7 +41,7 @@
 
         <div id="maincontainer">
         <h2> Login</h2>
-        <form name ="login" method="post" action="loginAction.jsp">
+        <form name ="login" method="post" action="">
             Username: <input type ="text" name="username">
             Password: <input type ="password" name ="password"><br>
             <input type ="submit" name="login" value ="Login"/> 
