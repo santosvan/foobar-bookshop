@@ -56,7 +56,7 @@ public class UserManager {
 
             int i=1;
 
-            PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM admin WHERE username = ? AND password = ?");
+            PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM admin WHERE adminUsername = ? AND adminPassword = ?");
 
             pstmt.setString(i++, username);
             pstmt.setString(i++, password);
