@@ -21,8 +21,6 @@
        <%   
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-            //String username_check = request.getParameter("username");
-            //String password_check = request.getParameter("password");
             boolean result = new UserManager().checkUser(username, password);
             boolean result2 = new UserManager().checkUser2(username);
           
